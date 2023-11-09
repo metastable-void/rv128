@@ -2,7 +2,7 @@
 
 ```sh
 cargo install router-hello
-sudo router-hello install
+sudo `which router-hello` install
 sudo systemctl status router-hello
 ```
 
@@ -25,3 +25,7 @@ ADDRESS_V6=2001:df3:14c0:1131::1
 ```
 
 Edit this env file as needed.
+
+## License
+
+Apache-2.0 or MPL-2.0.
