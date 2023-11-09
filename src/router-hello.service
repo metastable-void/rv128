@@ -1,0 +1,15 @@
+[Unit]
+Description=Router Hello Web Server
+After=network.target
+
+[Service]
+Type=simple
+User=root
+Group=root
+WorkingDirectory=/opt/router-hello
+ExecStart=/opt/router-hello/bin/router-hello http
+Restart=on-failure
+EnvironmentFile=/etc/default/router-hello
+
+[Install]
+WantedBy=multi-user.target
